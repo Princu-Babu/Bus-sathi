@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="452" viewBox="0 0 1280 452" role="img" aria-labelledby="t d">
+  <title id="t">How the repository fits together</title>
+  <desc id="d">Open inputs feed the engine, which produces the plan. The plan and the Bus Sathi GPS ground truth feed the analysis, which produces the results.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8a8984"/>
+    </marker>
+    <style>
+      .t  { font-family: Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif; }
+      .h  { font-size: 17px; font-weight: 700; fill: #0b1f33; }
+      .s  { font-size: 13.5px; fill: #3d3c39; }
+      .k  { font-size: 12px; font-weight: 700; letter-spacing: 1.2px; fill: #6d6c68; }
+      .ln { stroke: #8a8984; stroke-width: 2; fill: none; marker-end: url(#a); }
+    </style>
+  </defs>
+  <rect width="1280" height="452" rx="16" fill="#fbfbfa"/>
+
+  <!-- column labels -->
+  <g class="t k">
+    <text x="40" y="44">OPEN INPUTS</text>
+    <text x="330" y="44">BUILD</text>
+    <text x="640" y="44">PUBLISH &amp; OBSERVE</text>
+    <text x="960" y="44">TEST</text>
+  </g>
+
+  <!-- inputs -->
+  <g class="t">
+    <g><rect x="40" y="64" width="240" height="78" rx="10" fill="#ffffff" stroke="#d9d8d3"/>
+      <text class="h" x="58" y="96">Permit register</text><text class="s" x="58" y="120">614 stage-carriage permits</text></g>
+    <g><rect x="40" y="158" width="240" height="78" rx="10" fill="#ffffff" stroke="#d9d8d3"/>
+      <text class="h" x="58" y="190">WorldPop 2026</text><text class="s" x="58" y="214">100 m population surface</text></g>
+    <g><rect x="40" y="252" width="240" height="78" rx="10" fill="#ffffff" stroke="#d9d8d3"/>
+      <text class="h" x="58" y="284">OpenStreetMap</text><text class="s" x="58" y="308">roads · POIs · boundaries</text></g>
+    <g><rect x="40" y="346" width="240" height="78" rx="10" fill="#ffffff" stroke="#d9d8d3"/>
+      <text class="h" x="58" y="378">OSRM</text><text class="s" x="58" y="402">road routing</text></g>
+  </g>
+
+  <!-- engine -->
+  <g class="t">
+    <rect x="330" y="64" width="250" height="360" rx="12" fill="#e8f1fc" stroke="#2a78d6" stroke-width="1.5"/>
+    <text class="h" x="350" y="98">engine/</text>
+    <text class="s" x="350" y="122">route rationalisation</text>
+    <g class="s">
+      <rect x="350" y="146" width="210" height="52" rx="8" fill="#ffffff" stroke="#b7d3f6"/>
+      <text x="366" y="169">permits → 157 corridors</text><text x="366" y="188">catchments &amp; index</text>
+      <rect x="350" y="214" width="210" height="52" rx="8" fill="#ffffff" stroke="#b7d3f6"/>
+      <text x="366" y="237">consolidate &amp; tier</text><text x="366" y="256">headways by priority</text>
+      <rect x="350" y="282" width="210" height="52" rx="8" fill="#ffffff" stroke="#b7d3f6"/>
+      <text x="366" y="305">cycle time → fleet</text><text x="366" y="324">vehicle mix, QA gates</text>
+    </g>
+    <path class="ln" d="M455 198 v14"/><path class="ln" d="M455 266 v14"/>
+  </g>
+
+  <!-- plan + ground truth -->
+  <g class="t">
+    <rect x="640" y="104" width="260" height="120" rx="12" fill="#0b1f33"/>
+    <text x="660" y="140" font-size="17" font-weight="700" fill="#ffffff">plan/</text>
+    <text x="660" y="166" font-size="13.5" fill="#cde2fb">186 routes · 1,011 buses</text>
+    <text x="660" y="188" font-size="13.5" fill="#cde2fb">RTO workbooks · timetables</text>
+    <text x="660" y="210" font-size="13.5" fill="#cde2fb">stops register · network map</text>
+
+    <rect x="640" y="268" width="260" height="120" rx="12" fill="#fdf0ea" stroke="#eb6834" stroke-width="1.5"/>
+    <text class="h" x="660" y="304">ground-truth/</text>
+    <text class="s" x="660" y="330">Bus Sathi driver GPS</text>
+    <text class="s" x="660" y="352">43,809 runs · ~157 drivers</text>
+    <text class="s" x="660" y="374">speeds · dwell · route evidence</text>
+  </g>
+
+  <!-- analysis + results -->
+  <g class="t">
+    <rect x="960" y="64" width="280" height="252" rx="12" fill="#e9f7f1" stroke="#1baf7a" stroke-width="1.5"/>
+    <text class="h" x="980" y="98">analysis/</text>
+    <text class="s" x="980" y="122">23 modules · one command</text>
+    <g class="s">
+      <text x="980" y="156">• network walk catchments</text>
+      <text x="980" y="180">• validation channels V1–V6</text>
+      <text x="980" y="204">• Monte Carlo &amp; Sobol'</text>
+      <text x="980" y="228">• equity, transfers, cost</text>
+      <text x="980" y="252">• scenarios &amp; funding</text>
+      <text x="980" y="288" font-style="italic" fill="#6d6c68">verified: reproduces the plan exactly</text>
+    </g>
+    <rect x="960" y="346" width="280" height="78" rx="12" fill="#ffffff" stroke="#d9d8d3"/>
+    <text class="h" x="980" y="378">results/ · docs/</text>
+    <text class="s" x="980" y="402">figures · tables · claim ledger</text>
+  </g>
+
+  <!-- arrows -->
+  <path class="ln" d="M282 103 C 305 103, 305 180, 326 190"/>
+  <path class="ln" d="M282 197 C 305 197, 305 215, 326 222"/>
+  <path class="ln" d="M282 291 C 305 291, 305 262, 326 256"/>
+  <path class="ln" d="M282 385 C 305 385, 305 300, 326 292"/>
+  <path class="ln" d="M582 244 C 610 244, 610 164, 636 164"/>
+  <path class="ln" d="M902 164 C 930 164, 930 164, 956 164"/>
+  <path class="ln" d="M902 328 C 930 328, 930 250, 956 250"/>
+  <path class="ln" d="M1100 318 v24"/>
+</svg>

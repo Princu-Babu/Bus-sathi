@@ -16,14 +16,15 @@ Does WorldPop put people where buildings are? Spearman ρ between population and
 ρ > 0.60, at the route-catchment scale (n = 186) and on a 1 km grid. WorldPop itself uses footprints as a
 covariate, so agreement is partly expected by construction: this is a consistency check.
 
-<!--V1-TABLE-->
-| Source | Route catchments (area) | Route catchments (count) | 1 km grid (populated cells) |
-|---|---|---|---|
-| OpenStreetMap (12,343 buildings) | **0.657 pass** | 0.544 fail | 0.312 fail |
-<!--/V1-TABLE-->
+| Source | Footprints in the division | Route catchments (area) | Route catchments (count) | 1 km grid (all / populated) |
+|---|---|---|---|---|
+| **Microsoft Global ML Building Footprints** | 1,852,714 | **0.975 pass** | **0.940 pass** | **0.907 / 0.950 pass** |
+| OpenStreetMap | 12,343 | 0.657 pass | 0.544 fail | 0.316 / 0.312 fail |
 
-OSM building mapping is thin outside Srinagar (4–17 % of populated cells contain any mapped building),
-which is why the Microsoft machine-detected footprints were added as a second source (Table 6d, 6e).
+With the near-complete Microsoft layer (99.8 % of residents live in a 1 km cell containing a footprint)
+the population surface passes at every scale. OpenStreetMap maps any building in only 4–31 % of populated
+cells, depending on district, so its weaker result is a mapping gap rather than a population error
+(Tables 6d, 6e; CL-53).
 
 ## V2 · Operator benchmark (CHALO) — circular
 

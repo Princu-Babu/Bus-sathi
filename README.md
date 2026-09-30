@@ -50,31 +50,9 @@ produced by a module in this repository and traceable through a [claim ledger](d
 
 ## How it fits together
 
-```mermaid
-flowchart LR
-    subgraph Inputs["Open inputs"]
-        P["Permit register<br/>614 records"]
-        W["WorldPop 2026<br/>100 m population"]
-        O["OpenStreetMap<br/>roads · POIs · boundaries"]
-        R["OSRM<br/>routing"]
-    end
-    subgraph Engine["engine/ — route rationalisation"]
-        E1["Consolidate permits<br/>→ corridors"] --> E2["Score & tier<br/>routes"] --> E3["Headways, cycle time<br/>→ fleet"]
-    end
-    subgraph Truth["ground-truth/ — Bus Sathi app GPS"]
-        G["43,809 runs<br/>~157 drivers"]
-    end
-    subgraph Analysis["analysis/ — the paper's tests"]
-        A1["Network catchments"]
-        A2["Validation V1–V6"]
-        A3["Uncertainty<br/>(Monte Carlo, Sobol')"]
-        A4["Scenarios, equity,<br/>cost"]
-    end
-    Inputs --> Engine --> PL["plan/<br/>186 routes · 1,011 buses"]
-    PL --> Analysis
-    Truth --> Analysis
-    Analysis --> RS["results/<br/>figures · tables"]
-```
+<p align="center">
+  <img src="assets/architecture.svg" alt="Open inputs feed the engine, which produces the plan; the plan and the Bus Sathi GPS feed the analysis, which produces the results" width="100%">
+</p>
 
 ## Repository map
 
@@ -116,7 +94,7 @@ confidence and disagreement localises a weakness. Results are reported as they c
 
 | | Channel | Result |
 |---|---|---|
-| V1 | Population surface vs building footprints | <!--V1-->see [docs/04_validation.md](docs/04_validation.md)<!--/V1--> |
+| V1 | Population surface vs building footprints — *partly circular, disclosed* | **Passes** on 1.85 M Microsoft footprints (ρ 0.975 routes, 0.950 grid) |
 | V2 | Operator benchmark (CHALO e-bus) — *circular, disclosed* | **Fails** the ±15 % band (ratio 1.29–1.58) |
 | V3 | Expert weight elicitation | **Not conducted** — stated as future work |
 | V4 | Driver GPS (supply side) | Geometry and moving speed pass; dwell and run time fail |

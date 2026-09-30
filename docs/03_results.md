@@ -11,6 +11,8 @@ Every number carries its claim ID in [the ledger](CLAIM_LEDGER.md).
   network catchment is an upper bound on the true walkshed, so 37.4 % is a lower bound on the bias.
 - **Modelled run time is too fast.** Plan one-way time is a median 0.51 of observed; the per-km cap binds
   on 169 of 186 routes and sits below real pace (4.62 min/km observed vs a 4.0 urban cap) (CL-15–17, 31–32).
+- **The population surface is plausible**: WorldPop agrees with 1.85 million Microsoft building
+  footprints at ρ 0.91–0.98 across scales (partly circular — WorldPop uses footprints as a covariate) (CL-53).
 
 ## The plan
 
