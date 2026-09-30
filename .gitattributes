@@ -18,3 +18,8 @@ data/cache/*.csv.gz filter=lfs diff=lfs merge=lfs -text
 *.xlsx binary
 *.pdf binary
 *.png binary
+
+# Keep GitHub's language bar about the code, not the generated deliverables
+plan/*.html linguist-generated
+results/** linguist-generated
+data/** linguist-generated
