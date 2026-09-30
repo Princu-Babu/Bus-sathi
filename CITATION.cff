@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, data or results, please cite this repository as below.
+  The citation for the accompanying article will be added on publication.
+title: "Bus Sathi: open-data bus route rationalisation and fleet sizing for Kashmir Division"
+abstract: >-
+  Code, data and results for an open-data, demand-free framework for bus route
+  rationalisation and fleet sizing, applied to the ten districts of Kashmir Division,
+  India (6.58 million residents). Includes the route-rationalisation engine and its
+  published plan (186 routes, 1,011 buses), a driver-GPS ground-truth pipeline, and a
+  23-module analysis that reproduces every result reported in the manuscript
+  "Planning What You Cannot Count", including network walk catchments, six validation
+  channels and a Monte Carlo / Sobol' uncertainty analysis.
+type: software
+version: 1.0.0
+date-released: 2026-09-30
+license: GPL-3.0-or-later
+repository-code: "https://github.com/Princu-Babu/Bus-sathi"
+keywords:
+  - public transport
+  - bus route rationalisation
+  - fleet sizing
+  - open data
+  - demand-data scarcity
+  - walking catchments
+  - uncertainty analysis
+  - Kashmir
+authors:
+  - family-names: Bhadana
+    given-names: Prashant
+  - name: "Bus Sathi research team"
+# The final author list, order and affiliations follow the manuscript (decision D13)
+# and will replace the entity above before the first archived (DOI) release.
+preferred-citation:
+  type: article
+  title: "Planning What You Cannot Count: An Open-Data Framework for Bus Route Rationalisation and Fleet Sizing under Demand-Data Scarcity"
+  status: in-preparation
+  authors:
+    - family-names: Bhadana
+      given-names: Prashant
+    - name: "Bus Sathi research team"
+  year: 2026

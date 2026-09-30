@@ -1,0 +1,28 @@
+name: tests
+
+# Runs the full test suite on every push and pull request WITHOUT fetching Git
+# LFS objects (to stay within LFS bandwidth). The one end-to-end test that
+# needs the LFS caches skips itself when they are absent; the manual
+# "reproduce" workflow below runs it with LFS.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt pytest
+      - name: Test
+        run: pytest -q

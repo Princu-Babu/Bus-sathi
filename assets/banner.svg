@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-labelledby="t d">
+  <title id="t">Bus Sathi — planning what you cannot count</title>
+  <desc id="d">Open-data bus route rationalisation and fleet sizing for Kashmir Division, India.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1f33"/>
+      <stop offset="1" stop-color="#12304d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.45" r="0.55">
+      <stop offset="0" stop-color="#2a78d6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#2a78d6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="340" fill="url(#bg)"/>
+  <rect width="1280" height="340" fill="url(#glow)"/>
+
+  <!-- abstract route network radiating from a hub (Srinagar), echoing Figure 3 -->
+  <g fill="none" stroke-linecap="round" opacity="0.9">
+    <g stroke="#1baf7a" stroke-width="2.2" opacity="0.75">
+      <path d="M1000 170 C 940 120, 900 70, 860 30"/>
+      <path d="M1000 170 C 930 200, 860 230, 780 300"/>
+      <path d="M1000 170 C 1060 230, 1120 270, 1190 320"/>
+      <path d="M1000 170 C 1080 140, 1150 110, 1250 60"/>
+      <path d="M1000 170 C 960 240, 950 290, 930 340"/>
+      <path d="M1000 170 C 880 150, 800 140, 700 110"/>
+    </g>
+    <g stroke="#eb6834" stroke-width="2.4" opacity="0.8">
+      <path d="M1000 170 C 980 130, 990 95, 1030 60"/>
+      <path d="M1000 170 C 1040 190, 1080 205, 1120 200"/>
+      <path d="M1000 170 C 950 185, 915 200, 880 205"/>
+      <path d="M1000 170 C 1010 215, 1035 245, 1060 270"/>
+    </g>
+    <g stroke="#6da7ec" stroke-width="2.6">
+      <path d="M1000 170 C 985 150, 975 140, 960 128"/>
+      <path d="M1000 170 C 1020 150, 1030 140, 1048 132"/>
+      <path d="M1000 170 C 1018 188, 1030 196, 1046 206"/>
+      <path d="M1000 170 C 980 188, 968 196, 952 204"/>
+      <path d="M1000 170 C 1000 150, 1004 138, 1010 120"/>
+    </g>
+  </g>
+  <g fill="#0b1f33" stroke-width="2">
+    <circle cx="860" cy="30" r="4" stroke="#1baf7a"/><circle cx="780" cy="300" r="4" stroke="#1baf7a"/>
+    <circle cx="1190" cy="320" r="4" stroke="#1baf7a"/><circle cx="1250" cy="60" r="4" stroke="#1baf7a"/>
+    <circle cx="700" cy="110" r="4" stroke="#1baf7a"/><circle cx="1030" cy="60" r="4" stroke="#eb6834"/>
+    <circle cx="1120" cy="200" r="4" stroke="#eb6834"/><circle cx="880" cy="205" r="4" stroke="#eb6834"/>
+    <circle cx="1060" cy="270" r="4" stroke="#eb6834"/>
+  </g>
+  <circle cx="1000" cy="170" r="7" fill="#ffffff"/>
+  <circle cx="1000" cy="170" r="14" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+
+  <!-- wordmark -->
+  <g font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif">
+    <text x="72" y="132" fill="#ffffff" font-size="68" font-weight="700" letter-spacing="-1">Bus Sathi</text>
+    <text x="74" y="182" fill="#cde2fb" font-size="27" font-weight="400">Planning what you cannot count</text>
+    <text x="74" y="236" fill="#9ec5f4" font-size="18">Open-data bus route rationalisation and fleet sizing</text>
+    <text x="74" y="262" fill="#9ec5f4" font-size="18">for Kashmir Division, India · 614 permits · 186 routes · 6.58 M residents</text>
+  </g>
+  <rect x="74" y="292" width="64" height="4" rx="2" fill="#eb6834"/>
+</svg>

@@ -1,0 +1,7 @@
+{
+  "n_driver_days": 855,
+  "n_drivers": 157,
+  "n_calendar_days": 131,
+  "window": "February-June 2026",
+  "note": "Driver identifiers, dates, km and span removed; rows shuffled (seed 20260823)."
+}

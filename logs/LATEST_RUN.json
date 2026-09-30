@@ -1,0 +1,210 @@
+{
+  "timestamp_utc": "2026-09-30T16:52:23.613985+00:00",
+  "total_elapsed_sec": 378.4518259999895,
+  "overall_status": "SUCCESS",
+  "cli_args": [
+    "--quick"
+  ],
+  "results": [
+    {
+      "name": "a02b_faithfulness",
+      "stage": 0,
+      "status": "PASSED",
+      "duration": 1.1894065000087721,
+      "exit_code": 0,
+      "outputs_verified": 2,
+      "outputs_total": 2,
+      "log_file": "logs\\a02b_faithfulness.log"
+    },
+    {
+      "name": "q01_data_quality",
+      "stage": 0,
+      "status": "PASSED",
+      "duration": 11.17823249999492,
+      "exit_code": 0,
+      "outputs_verified": 2,
+      "outputs_total": 2,
+      "log_file": "logs\\q01_data_quality.log"
+    },
+    {
+      "name": "v04_gps_validation",
+      "stage": 1,
+      "status": "PASSED",
+      "duration": 1.646020000000135,
+      "exit_code": 0,
+      "outputs_verified": 2,
+      "outputs_total": 2,
+      "log_file": "logs\\v04_gps_validation.log"
+    },
+    {
+      "name": "a03_index_weights",
+      "stage": 2,
+      "status": "PASSED",
+      "duration": 27.60895470000105,
+      "exit_code": 0,
+      "outputs_verified": 2,
+      "outputs_total": 2,
+      "log_file": "logs\\a03_index_weights.log"
+    },
+    {
+      "name": "a04_class_count",
+      "stage": 2,
+      "status": "PASSED",
+      "duration": 5.153676000001724,
+      "exit_code": 0,
+      "outputs_verified": 4,
+      "outputs_total": 4,
+      "log_file": "logs\\a04_class_count.log"
+    },
+    {
+      "name": "a05_headway_timeofday",
+      "stage": 3,
+      "status": "PASSED",
+      "duration": 0.6303458000038518,
+      "exit_code": 0,
+      "outputs_verified": 5,
+      "outputs_total": 5,
+      "log_file": "logs\\a05_headway_timeofday.log"
+    },
+    {
+      "name": "a07_load_factor",
+      "stage": 3,
+      "status": "PASSED",
+      "duration": 0.6027183999976842,
+      "exit_code": 0,
+      "outputs_verified": 2,
+      "outputs_total": 2,
+      "log_file": "logs\\a07_load_factor.log"
+    },
+    {
+      "name": "a10_network_diagnostics",
+      "stage": 3,
+      "status": "PASSED",
+      "duration": 11.06251770000381,
+      "exit_code": 0,
+      "outputs_verified": 2,
+      "outputs_total": 2,
+      "log_file": "logs\\a10_network_diagnostics.log"
+    },
+    {
+      "name": "a11_coverage_accessibility",
+      "stage": 3,
+      "status": "PASSED",
+      "duration": 78.15947980000055,
+      "exit_code": 0,
+      "outputs_verified": 3,
+      "outputs_total": 3,
+      "log_file": "logs\\a11_coverage_accessibility.log"
+    },
+    {
+      "name": "a12_equity_gini",
+      "stage": 3,
+      "status": "PASSED",
+      "duration": 25.373145800011116,
+      "exit_code": 0,
+      "outputs_verified": 3,
+      "outputs_total": 3,
+      "log_file": "logs\\a12_equity_gini.log"
+    },
+    {
+      "name": "a13_transfers",
+      "stage": 3,
+      "status": "PASSED",
+      "duration": 16.37103589999606,
+      "exit_code": 0,
+      "outputs_verified": 6,
+      "outputs_total": 6,
+      "log_file": "logs\\a13_transfers.log"
+    },
+    {
+      "name": "a06_deadhead",
+      "stage": 3,
+      "status": "PASSED",
+      "duration": 0.8958951999957208,
+      "exit_code": 0,
+      "outputs_verified": 2,
+      "outputs_total": 2,
+      "log_file": "logs\\a06_deadhead.log"
+    },
+    {
+      "name": "a14_cost_emissions",
+      "stage": 3,
+      "status": "PASSED",
+      "duration": 0.5978216999938013,
+      "exit_code": 0,
+      "outputs_verified": 2,
+      "outputs_total": 2,
+      "log_file": "logs\\a14_cost_emissions.log"
+    },
+    {
+      "name": "a15_scenarios",
+      "stage": 3,
+      "status": "PASSED",
+      "duration": 89.50454460000037,
+      "exit_code": 0,
+      "outputs_verified": 2,
+      "outputs_total": 2,
+      "log_file": "logs\\a15_scenarios.log"
+    },
+    {
+      "name": "a16_peer_regression",
+      "stage": 3,
+      "status": "PASSED",
+      "duration": 1.9787280000018654,
+      "exit_code": 0,
+      "outputs_verified": 2,
+      "outputs_total": 2,
+      "log_file": "logs\\a16_peer_regression.log"
+    },
+    {
+      "name": "a08_sensitivity_oat",
+      "stage": 4,
+      "status": "PASSED",
+      "duration": 5.336123299988685,
+      "exit_code": 0,
+      "outputs_verified": 2,
+      "outputs_total": 2,
+      "log_file": "logs\\a08_sensitivity_oat.log"
+    },
+    {
+      "name": "a09_monte_carlo_sobol",
+      "stage": 4,
+      "status": "PASSED",
+      "duration": 51.2826051999873,
+      "exit_code": 0,
+      "outputs_verified": 3,
+      "outputs_total": 3,
+      "log_file": "logs\\a09_monte_carlo_sobol.log"
+    },
+    {
+      "name": "v01_spatial_crossval",
+      "stage": 4,
+      "status": "PASSED",
+      "duration": 2.418430499994429,
+      "exit_code": 0,
+      "outputs_verified": 2,
+      "outputs_total": 2,
+      "log_file": "logs\\v01_spatial_crossval.log"
+    },
+    {
+      "name": "v02_benchmark",
+      "stage": 4,
+      "status": "PASSED",
+      "duration": 1.169875099993078,
+      "exit_code": 0,
+      "outputs_verified": 2,
+      "outputs_total": 2,
+      "log_file": "logs\\v02_benchmark.log"
+    },
+    {
+      "name": "figures_tables",
+      "stage": 5,
+      "status": "PASSED",
+      "duration": 46.24791400000686,
+      "exit_code": 0,
+      "outputs_verified": 0,
+      "outputs_total": 0,
+      "log_file": "logs\\figures_tables.log"
+    }
+  ]
+}

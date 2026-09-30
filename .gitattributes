@@ -1,0 +1,20 @@
+# Heavy caches through Git LFS (git lfs pull after cloning)
+*.gpickle filter=lfs diff=lfs merge=lfs -text
+*.gpkg filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+data/cache/osrm_responses.json filter=lfs diff=lfs merge=lfs -text
+data/cache/*.csv.gz filter=lfs diff=lfs merge=lfs -text
+
+# Normalise text line endings
+*.py text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.cff text eol=lf
+*.svg text eol=lf
+
+# Binary deliverables
+*.xlsx binary
+*.pdf binary
+*.png binary
